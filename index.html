@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sorry Rapunzel : 1</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffe5e5; /* Light pink background */
+  }
+
+  .container {
+    text-align: center;
+    background-color: #ffd6d6; /* Light pink container background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(255, 105, 180, 0.3); /* Pink shadow */
+  }
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  form {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+
+  .btn {
+    background-color: #ff66b3; /* Pink button background */
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Hover animation */
+  }
+
+  .btn:hover {
+    background-color: #ff4da6; /* Darker pink on hover */
+    box-shadow: 0px 8px 20px rgba(255, 105, 180, 0.5); /* Darker pink shadow on hover */
+  }
+
+  .error-message {
+    color: #ff0000;
+    margin-top: 10px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>Sorry Rapunzel : 1</h2>
+  <form id="loginForm">
+    <input type="password" id="password" placeholder="Enter The Access Code Princess">
+    <button type="submit" class="btn">Unlock</button>
+    <p class="error-message" id="errorMessage"></p>
+  </form>
+</div>
+
+<script>
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+  var password = document.getElementById("password").value;
+  if (password === "1304") {
+    window.location.href = "no0.html"; // Redirect to no0.html
+  } else {
+    document.getElementById("errorMessage").textContent = "Access Denied : Your Are Not my Rapunzel : go back ";
+  }
+});
+</script>
+</body>
+</html>
